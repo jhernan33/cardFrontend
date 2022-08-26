@@ -32,13 +32,13 @@
             
             // Search Api
             if(company != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?company="+company;
+                cadena = "https://license.cards/business/businessCard/?company="+company;
             }else if(companyName != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?companyName="+companyName;
+                cadena = "https://license.cards/business/businessCard/?companyName="+companyName;
             }else if(user != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?user="+user;
+                cadena = "https://license.cards/business/businessCard/?user="+user;
             }else if(userName != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?userName="+userName;
+                cadena = "https://license.cards/business/businessCard/?userName="+userName;
             }
 
             const getBusinessCard = () => {
