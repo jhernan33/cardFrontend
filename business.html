@@ -29,16 +29,17 @@
             const companyName = ulrParams.get('companyName');
             const user = ulrParams.get('user');
             const userName = ulrParams.get('userName');
+            const api = "https://license.cards/business/businessCard/";
             
             // Search Api
             if(company != null){
-                cadena = "https://license.cards/business/businessCard/?company="+company;
+                cadena = api+"?company="+company;
             }else if(companyName != null){
-                cadena = "https://license.cards/business/businessCard/?companyName="+companyName;
+                cadena = api+"?companyName="+companyName;
             }else if(user != null){
-                cadena = "https://license.cards/business/businessCard/?user="+user;
+                cadena = api+"?user="+user;
             }else if(userName != null){
-                cadena = "https://license.cards/business/businessCard/?userName="+userName;
+                cadena = api+"?userName="+userName;
             }
 
             const getBusinessCard = () => {
