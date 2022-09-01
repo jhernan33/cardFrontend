@@ -29,16 +29,17 @@
             const companyName = ulrParams.get('companyName');
             const user = ulrParams.get('user');
             const userName = ulrParams.get('userName');
+            const api = "http://192.168.0.101:8085/business/businessCard/";
             
             // Search Api
             if(company != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?company="+company;
+                cadena = api+"?company="+company;
             }else if(companyName != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?companyName="+companyName;
+                cadena = api+"?companyName="+companyName;
             }else if(user != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?user="+user;
+                cadena = api+"?user="+user;
             }else if(userName != null){
-                cadena = "http://192.168.0.101:8085/businessCard/?userName="+userName;
+                cadena = api+"?userName="+userName;
             }
 
             const getBusinessCard = () => {
